@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .hehe{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .card{
+            border-radius: 5px;
+            background: #212529;
+            box-shadow: 3px 3px 15px #000000, -3px -4px 5px #75808c;
+            transition: all .3s;
+            
+        }
+        .card:hover{
+            box-shadow: 0px 0px 30px 1px rgba(3, 65, 32, 0.3);
+            transition: all .3s;
+        }
+        .card2:hover {
+        transform: scale(0.98);
+        border-radius: 8px;
+        background-color: #1a1a1a;
+        transition: all .2s;
+        }
+        .card-body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .xyz{
+            display: flex;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid justify-content-space-between">
+          <div class="container-fluid"><a class="navbar-brand" href="#">LaborLocate</a></div>
+        </div>
+      </nav>
+
+    <div class="hehe mt-5">
+        <!-- 1st -->
+      <div class="card mb-3" style="max-width: 440px;">
+        <div class="card2">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://img.freepik.com/free-vector/follow-me-social-business-theme-design_24877-52233.jpg?w=740&t=st=1706901302~exp=1706901902~hmac=34b9d61fd788d4b8fba37ca55298a546580a61cf510c2ce6215c2ac7a47a9190" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 xyz">
+            <div class="card-body">
+              <h5 class="card-title">User Manager</h5>
+              <button class="btn btn-success mt-3">View</button>
+            </div>
+          </div>
+        </div>
+    </div>
+      </div>
+        <!-- 2nd -->
+      <div class="card mt-5" style="max-width: 440px;">
+        <div class="card2">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://img.freepik.com/free-vector/agreement-concept-illustration_114360-414.jpg?w=740&t=st=1706901416~exp=1706902016~hmac=3c988026660fe285ede986801ccb29fb3584069159fb3db32d0842b4093cdc74" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 xyz">
+            <div class="card-body">
+              <h5 class="card-title">Customer Viewer</h5>
+              <button class="btn btn-success mt-3">View</button>
+              </div>
+          </div>
+        </div>
+    </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

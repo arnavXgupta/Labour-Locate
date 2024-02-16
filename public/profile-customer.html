@@ -1,0 +1,111 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Customer Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      .container {
+      /* position: relative; */
+        display: flex;
+        justify-content: center;
+      }
+      .card{
+        width: fit-content;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .form {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body data-bs-theme="dark">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid justify-content-space-between">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">LaborLocate</a>
+        </div>
+      </div>
+    </nav>
+    
+<div class="container">
+<!-- <div class="card row">
+  <input type="file" name="ppic" id="" required>
+</div> -->
+  <div class="card">
+    <form action="/prof-save-customer" class="row g-4">
+      
+      <h1 class="col-md-12"><center>Customer Profile Form</center></h1>
+      <div class="col-md-6">
+        <label for="inputFirst" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="inputFirst" placeholder="enter your first name" required/>
+      </div>
+      <div class="col-md-6">
+        <label for="inputLast" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="inputLast" placeholder="enter your last name" required/>
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputMail" class="form-label">Email Id</label>
+        <input type="email" class="form-control" id="inputMail" placeholder="enter your email id" required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputNum" class="form-label">Contact No.</label>
+        <input type="number" class="form-control" id="inputNum" placeholder="enter your contact no." required/>
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputAdd" class="form-label">Residential Address</label>
+        <input type="text" class="form-control" id="inputAdd" placeholder="enter your address" required>
+      </div>
+
+      <div class="col-md-3">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity" required>
+      </div>
+
+      <div class="col-md-3">
+        <label for="inputState" class="form-label">State</label>
+        <input type="text" class="form-control" id="inputState" required>
+      </div>
+      
+      <div class="col-2">
+       <h5>Profile Picture:</h5>
+      </div>
+      <div class="col-md-5">
+        <!-- <label for="inputProf" class="form-label">Profile Picture:</label> -->
+        <input type="file" class="form-control" id="inputProf">
+      </div>
+
+      <div class="col-12">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="gridCheck" required> 
+          <label for="gridCheck" class="form-check-label">You agree to the Terms & Conditions applied</label>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <center>
+          <button type="submit" class="btn btn-success col-12">Sign in</button>
+        </center>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
