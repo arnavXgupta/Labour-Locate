@@ -43,10 +43,12 @@ app.post("/signup" ,function(req,resp){
     // console.log(req.body);
 
     mysql.query("insert into project values(?, ?, ?, current_date, 1)", [email, pwd, member], function(err){
-        if(err==null)
-            resp.send("Signed up successfully");
-        else
-            resp.send(err.message);
+        if(email!="" && pwd!="" && member!=null){
+            if(err==null)
+                resp.send("Signed up successfully");
+            else
+                resp.send(err.message);
+        }
     })
 })
 
