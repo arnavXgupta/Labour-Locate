@@ -42,20 +42,27 @@ app.post("/signup" ,function(req,resp){
 
     // console.log(req.body);
 
-    mysql.query("insert into project values(?, ?, ?, current_date, 1)", [email, pwd, member], function(err){
-        if(email!="" && pwd!="" && member!=null){
-            if(err==null)
+    if (!pwd || !member) {
+        resp.send("Password and member are required");
+    } 
+    else {
+        mysql.query("INSERT INTO project VALUES (?, ?, ?, CURRENT_DATE, 1)", [email, pwd, member], function(err) {
+            if (err === null) {
                 resp.send("Signed up successfully");
-            else
+            } else {
                 resp.send(err.message);
-        }
-    })
+            }
+        });
+    }
+    
 })
 
 app.get("/check", function(req, resp){
     mysql.query("select * from project where EmailId=?",[req.query.kuchMail],function(err, resultJsonArry){
-        if(resultJsonArry.length==1)
+        if(resultJsonArry.length==1){
             resp.send("email id is not available");
+            document.getElementById("errRes").classList.add("not-ok");
+        }
         else    
             resp.send("Available!");
     })

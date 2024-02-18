@@ -52,7 +52,7 @@
             if(resp==="Signed up successfully")
               $("#check-signup").html(resp);
             else  
-              $("#check-signup").html("Error");
+              $("#check-signup").html(resp);
           })
 
 
@@ -121,11 +121,11 @@
 
               <div class="row mb-2 align-items-start">
                 <div class="col-6 col-sm-2">Email ID</div>
-                <span class="col-2 col-md-6" id="errRes">(Validation*)</span>
+                <span class="col-2 " id="errRes">(Validation*)</span>
               </div>
               <div class="row">
                 <div class="col-12 mb-3 form-floating">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                  <input type="email" class="form-control" name="txtEml" id="floatingInput" placeholder="name@example.com">
                   <label for="floatingInput" class="ms-2">enter a valid email id</label>
                 </div>
               </div>
@@ -135,7 +135,7 @@
                   </div>
                   <div class="row">
                     <div class="col-12 mb-3 form-floating">
-                      <input type="password" class="form-control" id="floatingPassword" placeholder="enter your password" disabled required>
+                      <input type="password" class="form-control" name="txtPwd" id="floatingPassword" placeholder="enter your password" disabled>
                       <label for="floatingPassword" class="ms-2">enter your password</label>
                     </div>
                   </div>
@@ -152,12 +152,12 @@
                   </div> -->
 
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="gold" required>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="gold">
                     <label class="form-check-label" for="inlineRadio1">Consumer</label>
                   </div>
 
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="silver" >
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="silver">
                     <label class="form-check-label" for="inlineRadio2">Service Provider</label>
                   </div>
 
@@ -278,7 +278,89 @@
       </ul>
     </div>
   </main>
-  <footer>
+
+  <footer class="text-center text-white " style="background-color: rgb(65, 65, 219);">
+    <!-- Grid container -->
+    <div class="container">
+      <!-- Section: Links -->
+      <section class="mt-2">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-4">
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white hyperlink">About us</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white hyperlink">Products</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white hyperlink">Awards</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white hyperlink">Help</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white hyperlink">Contact</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-2" />
+
+      <!-- Section: Text -->
+      <section class="mb-2">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              distinctio earum repellat quaerat voluptatibus placeat nam,
+              commodi optio pariatur est quia magnam eum harum corrupti
+              dicta, aliquam sequi voluptate quas.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Text -->
+
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >MDBootstrap.com</a
+        >
+    </div>
+    <!-- Copyright -->
   </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
